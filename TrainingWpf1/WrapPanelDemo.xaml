@@ -1,0 +1,46 @@
+﻿<Page x:Class="TrainingWpf1.WrapPanelDemo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="WrapPanelDemo">
+    
+    <!--Descriiption:
+        The grid is consists of two rows:
+        1st row consists the WrapPanel with horizontal (default) orientation 
+            This WrapPanelconsists number of different color rectangles.
+                The principal of Wrap panel is demonstrated by reducing the window width - The rectangles are forwarding to second row
+        2nd row consists the WrapPanel with VERTICAL orientation 
+            This WrapPanelconsists number of different color elipses.
+            The principal of Wrap panel is demonstrated by reducing the window height - The elipses are forwarding to second column -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+    
+    
+        <WrapPanel Grid.Row="0"> <!--The orientation of WrapPanel is Horizontal by Default-->
+            <Rectangle Fill="Red" Width="50" Height="50" />
+            <Rectangle Fill="Orange" Width="50" Height="50" />
+            <Rectangle Fill="Olive" Width="50" Height="50" />
+            <Rectangle Fill="Black" Width="50" Height="50" />
+            <Rectangle Fill="Beige" Width="50" Height="50" />
+            <Rectangle Fill="SaddleBrown" Width="50" Height="50" />
+            <Rectangle Fill="Firebrick" Width="50" Height="50" />
+            <Rectangle Fill="DarkBlue" Width="50" Height="50" />
+        </WrapPanel>
+        <WrapPanel Grid.Row="1" Orientation="Vertical">
+            <Ellipse Fill="Red" Width="50" Height="50" />
+            <Ellipse Fill="Orange" Width="50" Height="50" />
+            <Ellipse Fill="Olive" Width="50" Height="50" />
+            <Ellipse Fill="Black" Width="50" Height="50" />
+            <Ellipse Fill="Beige" Width="50" Height="50" />
+            <Ellipse Fill="SaddleBrown" Width="50" Height="50" />
+            <Ellipse Fill="Firebrick" Width="50" Height="50" />
+            <Ellipse Fill="DarkBlue" Width="50" Height="50" />
+        </WrapPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,22 @@
+﻿<Application x:Class="TrainingWpf1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- Header text style -->
+        <Style x:Key="headerTextStyle">
+            <Setter Property="Label.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Label.FontFamily" Value="Trebuchet MS"></Setter>
+            <Setter Property="Label.FontWeight" Value="Bold"></Setter>
+            <Setter Property="Label.FontSize" Value="24"></Setter>
+            <Setter Property="Label.Foreground" Value="#0066cc"></Setter>
+            <Setter Property="Panel.HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="Panel.Height" Value="Auto"></Setter>
+        </Style>
+
+        <Style x:Key="buttonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+        </Style>
+    </Application.Resources>
+</Application>
