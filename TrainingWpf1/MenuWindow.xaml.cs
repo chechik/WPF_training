@@ -63,5 +63,23 @@ namespace TrainingWpf1
             SimpleForm simpleForm = new SimpleForm();
             this.NavigationService.Navigate(simpleForm);
         }
+
+        private void Click_for_DataBindingOneWay(object sender, RoutedEventArgs e)
+        {
+            DataBindingOneWay dataBindingOneWay = new DataBindingOneWay();
+            this.NavigationService.Navigate(dataBindingOneWay);
+        }
+
+        private void Click_for_INPC(object sender, RoutedEventArgs e)
+        {
+            INPC inpc = new INPC();
+            this.NavigationService.Navigate(inpc);
+        }
+
+        private void Click_for_DataBindingTwoWay(object sender, RoutedEventArgs e)
+        {
+            DataBindingTwoWay dataBindingTwoWay = new DataBindingTwoWay();
+            this.NavigationService.Navigate(dataBindingTwoWay);
+        }
     }
 }

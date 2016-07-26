@@ -56,8 +56,18 @@
     <Compile Include="CanvasDemo.xaml.cs">
       <DependentUpon>CanvasDemo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataBindingOneWay.xaml.cs">
+      <DependentUpon>DataBindingOneWay.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DockPanelDemo.xaml.cs">
       <DependentUpon>DockPanelDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="DataBindingTwoWay.xaml.cs">
+      <DependentUpon>DataBindingTwoWay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="INPC.xaml.cs">
+      <DependentUpon>INPC.xaml</DependentUpon>
     </Compile>
     <Compile Include="SimpleForm.xaml.cs">
       <DependentUpon>SimpleForm.xaml</DependentUpon>
@@ -66,6 +76,10 @@
       <DependentUpon>WrapPanelDemo.xaml</DependentUpon>
     </Compile>
     <Page Include="CanvasDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataBindingOneWay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -78,6 +92,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ex2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataBindingTwoWay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="INPC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

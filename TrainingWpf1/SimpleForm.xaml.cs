@@ -46,5 +46,11 @@ namespace TrainingWpf1
             sb.Append(CalDate.SelectedDate.ToString());
             MessageBox.Show(sb.ToString());
         }
+
+        private void Job_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var newlyselectedItem = e.AddedItems[0];
+            MessageBox.Show(newlyselectedItem.ToString());
+        }
     }
 }

@@ -4,23 +4,24 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-      d:DesignHeight="350" d:DesignWidth="500"
-	Title="Menu">
+      d:DesignHeight="150" d:DesignWidth="500"
+	Title="Enterprise WPF with XAML and C# from Scratch">
 
     <Grid Margin="5,5,5,5">
         <!--Define TWO columns in the grid of menu window-->
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
         <!--Define columns in the grid of menu window-->
         
         <!--Button for first exmaple-->
         
     <!--Stack panel with buttons to Panel demonstrations-->
-    <StackPanel Grid.Column="0" Background="Aqua">
-            <TextBlock Style="{StaticResource headerTextStyle}" >Panels</TextBlock>
+    <StackPanel Grid.Row="0" Background="Aqua" Orientation="Horizontal">
+            <TextBlock Style="{StaticResource headerTextStyle}" >2.Panels  </TextBlock>
             <Button Click="Click_for_ex1" Style="{StaticResource buttonStyle}">Grid Rows and Columns Demo</Button>
             <Button Click="Click_for_ex2" Style="{StaticResource buttonStyle}">Layout With Stack Panel Demo</Button>
             <Button Click="Click_for_WrapPanelDemo" Style="{StaticResource buttonStyle}">Wrap Panel Demo</Button>
@@ -29,9 +30,18 @@
      </StackPanel>
      
      <!--Stack panel with Controls Demonstations-->
-        <StackPanel Grid.Column="1" Background="Lime">
-            <TextBlock Style="{StaticResource headerTextStyle}">Controls</TextBlock>
+        <StackPanel Grid.Row="1" Background="Lime" Orientation="Horizontal">
+            <TextBlock Style="{StaticResource headerTextStyle}">3.Controls  </TextBlock>
             <Button Click="Click_for_SimlpeForm" Style="{StaticResource buttonStyle}">Simple form</Button>
         </StackPanel>
+        
+     <!--Stack panel with Data Binding Demonstations-->
+        <StackPanel Grid.Row="2" Background="Peru" Orientation="Horizontal">
+            <TextBlock Style="{StaticResource headerTextStyle}">4.Data Binding  </TextBlock>
+            <Button Click="Click_for_DataBindingOneWay"  Style="{StaticResource buttonStyle}">One Way Data Binding</Button>
+            <Button Click="Click_for_INPC"  Style="{StaticResource buttonStyle}">INPC</Button>
+            <Button Click="Click_for_DataBindingTwoWay"  Style="{StaticResource buttonStyle}">Two Way Data Binding</Button>
+     </StackPanel>
+
     </Grid>
 </Page>

@@ -102,7 +102,8 @@
                   HorizontalAlignment="Left"
                   VerticalAlignment="Bottom"
                   Margin="5"
-                  SelectedIndex="0">
+                  SelectedIndex="0"
+                  SelectionChanged="Job_SelectionChanged">
             <ComboBoxItem Content="Programmer" />
             <ComboBoxItem Content="Director" />
             <ComboBoxItem Content="Kombainer" />
