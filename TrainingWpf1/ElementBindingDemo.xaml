@@ -1,0 +1,52 @@
+﻿<Page x:Class="TrainingWpf1.ElementBindingDemo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="ElementBindingDemo">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Style="{StaticResource descriptionHeaderTextStyle}">
+                Description:
+            </TextBlock>
+            <TextBlock Style="{StaticResource descriptionTextStyle}">
+                In the Demo below The returned value of Element slider is binded to the textblock:
+            </TextBlock>
+            <TextBlock Style="{StaticResource descriptionTextStyle}" Background="Black">
+                Text="{Binding Value, ElementName=mySlider}"
+            </TextBlock>
+            <TextBlock Style="{StaticResource descriptionTextStyle}">
+                In addition I added the textbox with two way binded vaue of slider:
+            </TextBlock>
+            <TextBlock Style="{StaticResource descriptionTextStyle}" Background="Black">
+                Text="{Binding Value, ElementName=mySlider, Mode=TwoWay}"
+            </TextBlock>
+            <TextBlock Style="{StaticResource descriptionTextStyle}">
+                By changing the value in the textbox the slider changes its position and also the textblock gets new value
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Slider Name="mySlider"
+                    Margin="20"
+                    Minimum="0" 
+                    Maximum="100"
+                    Width="300"/>
+            <TextBlock Margin="20"
+                       Text="{Binding Value, ElementName=mySlider}" />
+        </StackPanel>
+        <TextBox Grid.Row="2"  
+                 Margin="20"        
+                 Height="Auto"
+                 Width="50"
+                 HorizontalAlignment="Left"
+                 Text="{Binding Value, ElementName=mySlider, Mode=TwoWay}" />
+    </Grid>
+</Page>

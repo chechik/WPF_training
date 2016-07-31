@@ -56,11 +56,21 @@
     <Compile Include="CanvasDemo.xaml.cs">
       <DependentUpon>CanvasDemo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataBindingLists.xaml.cs">
+      <DependentUpon>DataBindingLists.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DataBindingOneWay.xaml.cs">
       <DependentUpon>DataBindingOneWay.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataConverter.cs" />
+    <Compile Include="DataConverterDemo.xaml.cs">
+      <DependentUpon>DataConverterDemo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DockPanelDemo.xaml.cs">
       <DependentUpon>DockPanelDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElementBindingDemo.xaml.cs">
+      <DependentUpon>ElementBindingDemo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs" />
     <Compile Include="DataBindingTwoWay.xaml.cs">
@@ -79,11 +89,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DataBindingLists.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DataBindingOneWay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DataConverterDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DockPanelDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ElementBindingDemo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

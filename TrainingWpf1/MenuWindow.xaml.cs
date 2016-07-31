@@ -81,5 +81,22 @@ namespace TrainingWpf1
             DataBindingTwoWay dataBindingTwoWay = new DataBindingTwoWay();
             this.NavigationService.Navigate(dataBindingTwoWay);
         }
+
+        private void Click_for_DataBindingLists(object sender, RoutedEventArgs e)
+        {
+            DataBindingLists dataBindingLists = new DataBindingLists();
+            this.NavigationService.Navigate(dataBindingLists);
+        }
+
+        private void Click_for_ElementBindingDemo(object sender, RoutedEventArgs e)
+        {
+            ElementBindingDemo elementBindingDemo = new ElementBindingDemo();
+            this.NavigationService.Navigate(elementBindingDemo);
+        }
+        private void Click_for_DataConverterDemo(object sender, RoutedEventArgs e)
+        {
+            DataConverterDemo dataConverterDemo = new DataConverterDemo();
+            this.NavigationService.Navigate(dataConverterDemo);
+        }
     }
 }

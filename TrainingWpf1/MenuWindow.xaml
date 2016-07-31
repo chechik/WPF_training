@@ -41,7 +41,12 @@
             <Button Click="Click_for_DataBindingOneWay"  Style="{StaticResource buttonStyle}">One Way Data Binding</Button>
             <Button Click="Click_for_INPC"  Style="{StaticResource buttonStyle}">INPC</Button>
             <Button Click="Click_for_DataBindingTwoWay"  Style="{StaticResource buttonStyle}">Two Way Data Binding</Button>
-     </StackPanel>
+            <Button Click="Click_for_DataBindingLists"  Style="{StaticResource buttonStyle}">Data Binding Lists</Button>
+            <Button Click="Click_for_ElementBindingDemo"  Style="{StaticResource buttonStyle}">Element Data Binding</Button>
+            <Button Click="Click_for_DataConverterDemo"  Style="{StaticResource buttonStyle}">Data Converter</Button>
+
+            
+        </StackPanel>
 
     </Grid>
 </Page>

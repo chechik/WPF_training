@@ -14,6 +14,27 @@
             <Setter Property="Panel.Height" Value="Auto"></Setter>
         </Style>
 
+        <Style x:Key="descriptionHeaderTextStyle">
+            <Setter Property="Label.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Label.FontFamily" Value="Trebuchet MS"></Setter>
+            <Setter Property="Label.FontWeight" Value="Bold"></Setter>
+            <Setter Property="Label.FontSize" Value="16"></Setter>
+            <Setter Property="Label.Foreground" Value="#0066cc"></Setter>
+            <Setter Property="Panel.HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="Panel.Height" Value="Auto"></Setter>
+        </Style>
+
+        <Style x:Key="descriptionTextStyle">
+            <Setter Property="TextBlock.VerticalAlignment" Value="Center" />
+            <Setter Property="TextBlock.FontFamily" Value="Trebuchet MS" />
+            <Setter Property="TextBlock.FontStyle" Value="Italic" />
+            <Setter Property="TextBlock.Foreground" Value="BlueViolet" />
+            <Setter Property="Panel.HorizontalAlignment" Value="Left" />
+            <Setter Property="Panel.Height" Value="Auto" />
+            <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+            <Setter Property="TextBlock.Margin" Value="6" />
+        </Style>
+
         <Style x:Key="buttonStyle" TargetType="{x:Type Button}">
             <Setter Property="Margin" Value="5" />
             <Setter Property="HorizontalAlignment" Value="Left" />

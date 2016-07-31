@@ -16,21 +16,14 @@ using System.Windows.Shapes;
 namespace TrainingWpf1
 {
     /// <summary>
-    /// Interaction logic for INPC.xaml
+    /// Interaction logic for DataBindingLists.xaml
     /// </summary>
-    public partial class DataBindingTwoWay : Page
+    public partial class DataBindingLists : Page
     {
-        private Employee emp;
-        public DataBindingTwoWay()
+        public DataBindingLists()
         {
             InitializeComponent();
-            emp = new Employee()
-            {
-                Name = "Joe",
-                Title = "QA"
-            };
-            DataContext = emp;
+            DataContext = Employee.GetEmployees();
         }
-
     }
 }
